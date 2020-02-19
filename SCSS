@@ -1,0 +1,87 @@
+$font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: inherit;
+    font-weight: inherit;
+    line-height: 1;
+}
+html, body {
+    height: 100%;
+}
+html {
+    font-size: 90%;
+    font-family: $font-family;
+    background: #263238;
+    background-image: radial-gradient(#37474F, #263238)
+}
+
+body {
+    font-size: 1rem;
+    color: white;
+    background: transparent;
+    text-align: center;
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+}
+
+// the app
+#screen {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 0;
+}
+
+//
+// Font styles
+
+h1 { // tick tock
+    font-size: 8rem;
+    font-weight: 100;
+}
+h2, h3 { // greeting & date
+    font-weight: 300;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+h3, h4, h6 {
+    color: rgba(white, .4);
+}
+h4, h5 {
+    font-size: 1.25rem;
+}
+h4 {
+    font-weight: 200;
+}
+h5 { // temps
+    font-weight: normal;
+}
+h6 { // weather times
+    font-size: .75rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+// screen sections
+
+footer {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: row wrap;
+    .item {
+        margin: 2rem;
+    }
+    svg.icon {
+        height: 3rem;
+        width: 3rem;
+        margin-bottom: 1rem;
+    }
+}
